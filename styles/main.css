@@ -1,0 +1,61 @@
+@layer reset, fonts, tokens, base, layout, components, utilities, responsive, states;
+
+@import url('./reset.css') layer(reset);
+@import url('./fonts.css') layer(fonts);
+@import url('./tokens.css') layer(tokens);
+
+@layer base {
+  body {
+    padding-block: var(--space-300);
+    font-family: var(--ff-base);
+    font-size: var(--fs-200);
+    background-color: var(--color-surface-default);
+    color: var(--color-text-body);
+  }
+}
+
+
+@layer layout {
+  .container {
+    /* outline: 1px solid red; */
+    margin-inline: auto;
+    inline-size: clamp(343px, 90vw, 1110px);
+  }
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+@layer components {
+
+  /* BUTTONS */
+  .btn {
+    font-size: var(--fs-200);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    border-radius: var(--radius-100);
+  }
+  
+  .btn--secondary {
+    padding: .75em 1em;
+    background-color: var(--color-surface-muted);
+    color: var(--color-text-heading);
+  }
+}
+
+
+@layer utilities {}
+
+@layer responsive {
+  @media (width >= 768px) {
+    .btn--secondary {
+      padding: 1em 1.5em;
+    }
+  }
+}
+
+@layer states {}
