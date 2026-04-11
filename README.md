@@ -17,7 +17,7 @@ This is a solution to the [Typemaster pre-launch landing page challenge on Front
 ## 🔗 Links
 
 - 🌎 [Live site](https://vimpdev.github.io/fem-junior-htmlcss-04-typemaster-landing-page/)
-<!-- - 📌 [Frontend Mentor solution]() -->
+- 📌 [Frontend Mentor solution](https://www.frontendmentor.io/solutions/typemaster-landing-page-html-css-mobile-first-with-css-layers-3EEqQ-7geI)
 
 ---
 
