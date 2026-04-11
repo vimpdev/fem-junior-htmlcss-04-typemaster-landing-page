@@ -32,6 +32,7 @@ This is a solution to the [Typemaster pre-launch landing page challenge on Front
 | 🖥️ Desktop | 🖱️ Hover | 🎯 Focus |
 | --- | --- | --- |
 | ![](./docs/desktop-default.avif) | ![](./docs/desktop-hover.avif) | ![](./docs/desktop-focus.avif) |
+
 | 📱 Mobile | 📲 Tablet |
 | --- | --- |
 | ![](./docs/mobile.avif) | ![](./docs/tablet.avif) |
