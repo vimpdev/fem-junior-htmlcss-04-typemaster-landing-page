@@ -14,6 +14,13 @@
     --color-surface-muted: var(--color-neutral-200);
     --color-surface-accent: var(--color-primary-500);
 
+    --color-surface-accent-hover: var(--color-primary-300);
+    --color-surface-muted-hover: var(--color-neutral-900);
+    --color-focus-ring-accent: var(--color-primary-500);
+    --color-focus-ring-default: var(--color-neutral-900);
+
+    --transition-fast: .2s ease-out;
+
     --space-0: 0;
     --space-025: 0.125rem;
     --space-050: 0.25rem;

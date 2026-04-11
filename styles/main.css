@@ -110,6 +110,7 @@
     font-weight: var(--fw-bold);
     text-transform: uppercase;
     border-radius: var(--radius-100);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
   }
 
   .btn--primary {
@@ -211,6 +212,8 @@
       block-size: 0.125rem;
       inline-size: 100%;
       background-color: currentColor;
+      transition: inline-size var(--transition-fast);
+      pointer-events: none;
     }
   }
 
@@ -428,4 +431,25 @@
   }
 }
 
-@layer states {}
+@layer states {
+  .btn--primary:hover {
+    background-color: var(--color-surface-accent-hover);
+  }
+
+  .btn--secondary:hover {
+    background-color: var(--color-surface-muted-hover);
+    color: var(--color-text-inverse);
+  }
+
+  .btn--primary:focus-visible {
+    outline-color: var(--color-focus-ring-accent);
+  }
+
+  :where(.btn--secondary, .attribution__link):focus-visible {
+    outline-color: var(--color-focus-ring-default);
+  }
+
+  .attribution__link:is(:hover, :focus-visible)::after {
+    inline-size: 0;
+  }
+}
