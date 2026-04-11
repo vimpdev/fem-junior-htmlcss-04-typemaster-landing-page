@@ -15,24 +15,25 @@
     --color-surface-accent: var(--color-primary-500);
 
     --space-0: 0;
-    --space-025: 2px;
-    --space-050: 4px;
-    --space-075: 6px;
-    --space-100: 8px;
-    --space-125: 10px;
-    --space-150: 12px;
-    --space-200: 16px;
-    --space-250: 20px;
-    --space-300: 24px;
-    --space-400: 32px;
-    --space-500: 40px;
-    --space-600: 48px;
-    --space-800: 64px;
-    --space-1000: 80px;
+    --space-025: 0.125rem;
+    --space-050: 0.25rem;
+    --space-075: 0.375rem;
+    --space-100: 0.5rem;
+    --space-125: 0.625rem;
+    --space-150: 0.75rem;
+    --space-200: 1rem;
+    --space-250: 1.25rem;
+    --space-300: 1.5rem;
+    --space-400: 2rem;
+    --space-500: 2.5rem;
+    --space-600: 3rem;
+    --space-800: 4rem;
+    --space-1000: 5rem;
 
-    --radius-100: 8px;
-    --radius-200: 16px;
-    --radius-250: 20px;
+    --radius-025: 0.125rem;
+    --radius-100: 0.5rem;
+    --radius-200: 1rem;
+    --radius-250: 1.25rem;
 
     --ff-base: 'Barlow', system-ui, sans-serif;
 
@@ -40,11 +41,11 @@
     --fw-bold: 700;
     --fw-medium: 500;
 
-    --fs-100: .85rem;
+    --fs-100: 0.825rem;
     --fs-200: 1rem;
-    --fs-300: clamp(1rem, .7rem + 1.25vw, 18px);
-    --fs-400: 24px;
-    --fs-500: 32px;
-    --fs-600: clamp(48px, 2.25rem + 3.2vw, 56px);
+    --fs-300: clamp(1rem, .7rem + 1.25vw, 1.125rem);
+    --fs-400: 1.5rem;
+    --fs-500: 2rem;
+    --fs-600: clamp(3rem, 2.25rem + 3.2vw, 3.5rem);
   }
 }

@@ -19,7 +19,7 @@
 @layer layout {
   .container {
     margin-inline: auto;
-    inline-size: 343px;
+    inline-size: 21.4375rem;
   }
 
   /* HEADER */
@@ -75,22 +75,28 @@
   }
 
   .feature {
-    --stack-space: var(--space-400)
+    --stack-space: var(--space-400);
   }
 
   .feature__content {
-    --stack-space: var(--space-250)
+    --stack-space: var(--space-250);
+  }
+
+  /* FOOTER */
+  .footer__inner {
+    --stack-space: var(--space-200);
+    align-items: center;
   }
 
   /* BUTTONS */
   .hero__actions {
-    --cluster-space: var(--space-300)
+    --cluster-space: var(--space-300);
   }
 
   /* ILLUSTRATIONS */
   .features__illustrations {
     --cluster-space: var(--space-300);
-    inline-size: 373px;
+    inline-size: 23.3125rem;
     transform: translateX(calc(-1 * var(--space-400)));
   }
 }
@@ -110,6 +116,7 @@
     padding: 1em 1.5em;
     background-color: var(--color-surface-accent);
     color: var(--color-text-inverse);
+    text-shadow: 0 0 1px var(--color-text-heading);
   }
 
   .btn--secondary {
@@ -120,7 +127,7 @@
 
   /* ILLUSTRATION */
   .hero__illustration {
-    inline-size: 372px;
+    inline-size: 23.25rem;
     border-radius: var(--radius-250);
     overflow: hidden;
   }
@@ -139,8 +146,8 @@
   }
 
   .feature__icon {
-    inline-size: 65px;
-    block-size: 65px;
+    inline-size: 4.0625rem;
+    block-size: 4.0625rem;
     display: grid;
     place-items: center;
     border-radius: var(--radius-200);
@@ -184,6 +191,29 @@
     line-height: 1.15;
   }
 
+  .attribution {
+    font-size: var(--fs-100);
+  }
+
+  .attribution__link {
+    position: relative;
+    margin-inline: .3em;
+    text-decoration: none;
+    color: var(--color-text-heading);
+    border-radius: var(--radius-025);
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -0.125rem;
+      inline-size: 100%;
+      block-size: 0.125rem;
+      inline-size: 100%;
+      background-color: currentColor;
+    }
+  }
+
   .text-meta {
     font-weight: var(--fw-bold);
     font-size: var(--fs-200);
@@ -213,7 +243,7 @@
 }
 
 @layer responsive {
-  @media (width >=768px) {
+  @media (width >=48rem) {
 
     /* BASE */
     body {
@@ -222,7 +252,7 @@
 
     /* LAYOUT */
     .container {
-      inline-size: 704px;
+      inline-size: 44rem;
     }
 
     .hero {
@@ -253,7 +283,7 @@
     }
 
     .features__illustrations {
-      inline-size: 689px;
+      inline-size: 43.0625rem;
     }
 
     .features__content {
@@ -269,11 +299,11 @@
     }
 
     .feature {
-      --stack-space: var(--space-600)
+      --stack-space: var(--space-600);
     }
 
     .feature__content {
-      --stack-space: var(--space-300)
+      --stack-space: var(--space-300);
     }
 
     /* BUTTONS */
@@ -283,7 +313,7 @@
 
     /* ILLUSTRATIONS */
     .hero__illustration {
-      inline-size: 478px;
+      inline-size: 29.875rem;
       justify-self: end;
     }
 
@@ -299,7 +329,7 @@
     }
   }
 
-  @media (width >=1200px) {
+  @media (width >=75rem) {
 
     /* BASE */
     body {
@@ -308,7 +338,7 @@
 
     /* LAYOUT */
     .container {
-      inline-size: 1110px;
+      inline-size: 69.375rem;
     }
 
     .hero {
@@ -325,8 +355,8 @@
         position: absolute;
         top: 0;
         right: 0;
-        inline-size: 255px;
-        block-size: 240px;
+        inline-size: 15.9375rem;
+        block-size: 15rem;
         background: url('./../assets/images/patterns/pattern-square.svg') no-repeat center / contain;
         transform: translateX(calc(100% + var(--space-400)));
         pointer-events: none;
@@ -351,8 +381,8 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        inline-size: 255px;
-        block-size: 240px;
+        inline-size: 15.9375rem;
+        block-size: 15rem;
         background: url('./../assets/images/patterns/pattern-square.svg') no-repeat center / contain;
         transform: translateX(calc(-100% - var(--space-400)));
         pointer-events: none;
@@ -369,7 +399,7 @@
     }
 
     .features__illustrations {
-      inline-size: 730px;
+      inline-size: 45.625rem;
     }
 
     .features__list {
@@ -377,14 +407,18 @@
       grid-template-columns: repeat(4, 1fr);
     }
 
+    .footer {
+      padding-block-end: var(--space-400);
+    }
+
     /* BUTTONS */
     .hero__actions {
-      --cluster-space: var(--space-500)
+      --cluster-space: var(--space-500);
     }
 
     /* ILLUSTRATION */
     .hero__illustration {
-      inline-size: 540px;
+      inline-size: 33.75rem;
     }
 
     /* TYPOGRAPHY */
